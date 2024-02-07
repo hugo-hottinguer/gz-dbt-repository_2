@@ -16,7 +16,7 @@ sources:
       - name: ship
         description: information regarding our shipping costs
         identifier: raw_gz_ship
-        
+
       - name: adwords
         description: paid media results with adwords
         identifier: raw_gz_adwords
