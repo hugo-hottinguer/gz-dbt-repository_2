@@ -9,13 +9,11 @@ sources:
         identifier: raw_gz_product
       - name: sales
         description: information regarding our sales
-        freshness: 
-          warn_after: {count: 90, period: days}  
-        loaded_at_field: "CAST(date_date as TIMESTAMP)"
         identifier: raw_gz_sales
         tests: 
-            - unique:
-              column_name: "(orders_id || _ || pdt_id)"
+          - unique:
+              column_name: "(orders_id || '-' || pdt_id)"
+
       - name: ship
         description: information regarding our shipping costs
         identifier: raw_gz_ship
