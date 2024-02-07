@@ -13,7 +13,25 @@ sources:
         tests: 
           - unique:
               column_name: "(orders_id || '-' || pdt_id)"
-
       - name: ship
         description: information regarding our shipping costs
         identifier: raw_gz_ship
+        
+      - name: adwords
+        description: paid media results with adwords
+        identifier: raw_gz_adwords
+
+      - name: bing
+        description: paid media results with bing
+        identifier: raw_gz_bing
+
+      - name: criteo
+        description: paid media results with criteo
+        identifier: raw_gz_criteo
+
+      - name: facebook
+        description: paid media results with criteo
+        identifier: raw_gz_facebook
+
+
+      
